@@ -118,6 +118,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
     float brakeTime;
+
     void FixedUpdate()
     {
         //find movement direction
@@ -174,7 +175,7 @@ public class PlayerController : MonoBehaviour {
         if (jumpQueued)
         {
             rb.AddForce(Vector3.up * jumpStrength, ForceMode.Impulse);
-			rb.AddForce (Vector3.forward * 1.5f, ForceMode.Impulse);
+
             jumpQueued = false;
         }
 

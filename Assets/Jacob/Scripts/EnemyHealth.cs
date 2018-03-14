@@ -6,16 +6,13 @@ using UnityEngine.SceneManagement;
 public class EnemyHealth : MonoBehaviour {
 
     public int MaxHealth = 1;
-<<<<<<< HEAD
     public int Health;
     GameObject Player;
     bool invincibleFrams = false;
     public float invincibleTime;
     float timeStart;
     Component bodyCollider;
-=======
-    public static int Health;
->>>>>>> dev
+
 	
     void Start()
     {
